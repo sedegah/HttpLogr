@@ -2,7 +2,7 @@
 
 HttpLogr is a Python-based CLI tool for tracing websites and logging detailed network, SSL, and server metadata. It identifies redirect chains, extracts SSL certificate info, performs geolocation lookups, and detects if a site is static, WordPress-based, or AI-generated.
 
-## 🚀 Features
+## Features
 
 - Trace full HTTP redirect chains
 - View all response headers
@@ -13,7 +13,7 @@ HttpLogr is a Python-based CLI tool for tracing websites and logging detailed ne
 - Export to `.txt`, `.json`, or `.md`
 - Verbose console logging
 
-## 📦 Installation
+##  Installation
 
 ```bash
 git clone https://github.com/yourusername/HttpLogr.git
@@ -23,7 +23,7 @@ venv\Scripts\activate   # or source venv/bin/activate on Unix
 pip install -r requirements.txt
 ````
 
-## 🛠 Requirements
+##  Requirements
 
 * Python 3.7+
 * `requests`
@@ -35,7 +35,7 @@ Install via:
 pip install -r requirements.txt
 ```
 
-## 📌 Usage
+##  Usage
 
 ```bash
 python httptrace.py <url> [--geo] [--export json|markdown] [--verbose]
@@ -49,7 +49,7 @@ python httptrace.py http://xlabsgh.com --geo
 python httptrace.py https://myai.site --verbose --export markdown
 ```
 
-## 📤 Output
+##  Output
 
 Depending on the domain, output is saved as:
 
@@ -66,7 +66,7 @@ Example fields:
 * Site Technology
 * Geolocation (if enabled)
 
-## 🧠 Site Type Detection
+##  Site Type Detection
 
 HttpLogr makes an intelligent guess:
 
@@ -75,16 +75,16 @@ HttpLogr makes an intelligent guess:
 * **Likely Static**: Very few lines of HTML with simple structure
 * **Unknown**: Fallback if no strong indicators are found
 
-## 🌐 Geolocation
+## Geolocation
 
 Uses `ip-api.com` to map IP → Country, Region, City, ISP
 This is optional via `--geo` flag.
 
-## 📄 License
+## License
 
 MIT License
 
-## 🙋‍♂️ Author
+##  Author
 
 Developed by [Kimathi Elikplim Sedegah](https://kimathisedegah.vercel.app)
 
